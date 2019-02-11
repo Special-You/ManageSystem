@@ -6,6 +6,10 @@ import store from './vuex/index'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 
+import {api} from './assets/js/api'
+window.$api = api;
+//Vue.prototype.$api = api;
+
 Vue.use(Vuex);
 Vue.use(iView);
 Vue.config.productionTip = false
